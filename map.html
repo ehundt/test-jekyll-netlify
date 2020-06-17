@@ -2,8 +2,9 @@
 layout: default
 title: Posts
 ---
+
 <script>
-  fetch('/api/v1/forms/post/submissions').then(response => { return response.json() }).then(res => console.log(res));
+  fetch('https://api.netlify.com/api/v1/sites/d090ab86-1c38-4110-8623-758d9640fc06/submissions?access_token=5005a40256c13aea5ed7d9bcb76b9db321003bf6ed5f04eb7e4da9f0baec320e').then(response => { return response.json() }).then(res => console.log(res));
 </script>
 
 <h1>Latest Posts bla bla</h1>
