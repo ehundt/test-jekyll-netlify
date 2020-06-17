@@ -1,10 +1,8 @@
 ---
 layout: default
-title: Write a post
-permalink: /post/
+title: Blog
 ---
-
-<form name="post" method="POST" action="/blog" netlify>
+<form name="post" method="POST" netlify>
   <p>
     <label>Name: <input type="text" name="name" size="40"></label>
   </p>
@@ -18,3 +16,15 @@ permalink: /post/
     <button type="submit">Send</button>
   </p>
 </form>
+
+<h1>Latest Posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
+
