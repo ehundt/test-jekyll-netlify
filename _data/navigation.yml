@@ -4,7 +4,7 @@
   link: /about
 - name: Test
   link: /test
-- name: Blogs
-  link: /blog
+- name: Posts
+  link: /post
 - name: Authors
   link: /staff
