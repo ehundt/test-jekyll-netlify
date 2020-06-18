@@ -1,7 +1,16 @@
+<<<<<<< HEAD
+=======
+# config.yml
+
+>>>>>>> 4ac05d10a97072aa611cc2b86cae4e2080bd4b0a
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ac05d10a97072aa611cc2b86cae4e2080bd4b0a
 collections:
   - name: 'blog'
     label: 'Blog'
