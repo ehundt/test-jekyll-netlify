@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
+locale: 'de'
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -14,6 +15,7 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: "Location", name: "location", widget: "map" }
       - {
           label: 'Author',
           name: 'author',
@@ -34,7 +36,7 @@ collections:
       - label: "Geokoordinaten"
         name: "location"
         widget: "object"
-        collapsed: true
+        collapsed: false
         fields:
           - { label: 'Latitude', name: 'latitude', widget: 'number', valueType: "float" }
           - { label: 'Longitude', name: 'longitude', widget: 'number', valueType: "float" }
@@ -45,6 +47,7 @@ collections:
     create: true
     editor:
       preview: false
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'author' }
       - { label: 'Short Name', name: 'name', widget: 'string' }
@@ -53,8 +56,6 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'about'
     label: 'About'
-    folder: '/'
-    create: true
     editor:
       preview: false
     file: "/about.markdown"
