@@ -62,7 +62,7 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'default' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'footercontent', name: 'body', widget: 'markdown' }
+      - { label: 'footercontent', name: 'footercontent', widget: 'markdown' }
   - name: "config"
     label: "Config"
     editor:
