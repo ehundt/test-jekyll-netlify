@@ -54,16 +54,6 @@ collections:
       - { label: 'Display Name', name: 'display_name', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'about'
-    label: 'About'
-    editor:
-      preview: false
-    file: "/about.markdown"
-    fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'default' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'footercontent', name: 'footercontent', widget: 'markdown' }
   - name: "config"
     label: "Config"
     editor:
