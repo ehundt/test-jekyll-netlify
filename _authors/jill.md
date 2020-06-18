@@ -1,5 +1,5 @@
 ---
-name: jill
+name: Jill
 display_name: Jill Smith
 position: Chief Editor
 ---
