@@ -14,6 +14,8 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Latitude', name: 'latitude', widget: 'number'}
+      - { label: 'Longitude', name: 'longitude', widget: 'number'}
       - {
           label: 'Author',
           name: 'author',
