@@ -38,6 +38,16 @@ collections:
       - { label: 'Display Name', name: 'display_name', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'about'
+    label: 'About'
+    folder: '/'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'author' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: "config"
     label: "Config"
     editor:
