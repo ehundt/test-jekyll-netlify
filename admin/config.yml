@@ -25,6 +25,21 @@ collections:
           searchFields: [display_name],
           valueField: 'name',
         }
+      - label: "Address"
+        name: "address"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Street Address", name: "street", widget: "string"}
+          - {label: "City", name: "city", widget: "string"}
+          - {label: "Postal Code", name: "post-code", widget: "string"}
+      - label: "Geokoordinaten"
+        name: "location"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: 'Latitude', name: 'latitude', widget: 'number' }
+          - { label: 'Longitude', name: 'longitude', widget: 'number' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'authors'
     label: 'Authors'
