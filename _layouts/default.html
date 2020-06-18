@@ -29,7 +29,7 @@
       <div class="wrapper">
         <div class="home">
 <h2 class="post-list-heading">{{ page.title }}</h2>
-    <ul class="post-list"><li><span class="post-meta">Jun 15, 2020</span>
+    <ul class="post-list"><li><span class="post-meta">{{ page.date | date_to_string }}</span>
 </li></ul>
     <p>{{content}}
 
