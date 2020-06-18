@@ -14,8 +14,6 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Latitude', name: 'latitude', widget: 'number'}
-      - { label: 'Longitude', name: 'longitude', widget: 'number'}
       - {
           label: 'Author',
           name: 'author',
@@ -38,8 +36,8 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - { label: 'Latitude', name: 'latitude', widget: 'number' }
-          - { label: 'Longitude', name: 'longitude', widget: 'number' }
+          - { label: 'Latitude', name: 'latitude', widget: 'number', valueType: "float" }
+          - { label: 'Longitude', name: 'longitude', widget: 'number', valueType: "float" }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'authors'
     label: 'Authors'
