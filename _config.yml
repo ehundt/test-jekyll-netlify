@@ -33,6 +33,11 @@ github_username:  ehundt
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-maps
+
+maps:
+  google:
+    api_key: GOOGLE_API_KEY
 
 collections:
   authors:

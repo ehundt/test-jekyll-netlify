@@ -2,6 +2,9 @@
 title:  "This is a title"
 date:   2020-06-15 11:39:52 +0200
 categories: jekyll update
+location:
+  latitude: 51.0285582
+  longitude: -0.3416807
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
