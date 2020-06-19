@@ -27,16 +27,16 @@ layout: default
 <div class="content">{{ content }}</div>
 
 <script>
-console.log({{ page.location }});
+console.log({{ page.geolocation }});
 </script>
 
 
 {% capture longitude %}
-"{{ page.location.coordinates[0] }}"
+"{{ page.geolocation.coordinates[0] }}"
 {% endcapture %}
 
 {% capture latitude %}
-"{{ page.location["coordinates"][1] }}"
+"{{ page.geolocation["coordinates"][1] }}"
 {% endcapture %}
 
 latitude {{ latitude }}<br />
