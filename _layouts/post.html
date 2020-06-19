@@ -39,4 +39,7 @@ console.log({{ page.location }});
 "{{ page.location.coordinates[1] }}"
 {% endcapture %}
 
+latitude {{ latitude }}<br />
+longitude {{ longitude }}<br />
+
 {% include google-map.html latitude=latitude longitude=longitude zoom=5 %}
