@@ -18,8 +18,8 @@ layout: default
 <div>Location: {{ page.location }}</div>
 {% endif %}
 
-{% if page.geolocation %}
-<div>Geokoordinaten: {{ page.geolocation.latitude }} - {{ page.geolocation.longitude }}</div>
+{% if page.latitude %}
+<div>Geokoordinaten: {{ page.latitude }} - {{ page.longitude }}</div>
 {% endif %}
 
 {% google_map %}
