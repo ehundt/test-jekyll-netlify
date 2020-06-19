@@ -25,6 +25,10 @@ collections:
           searchFields: [display_name],
           valueField: 'name',
         }
+      - name: categories
+        label: Categories
+        widget: categories
+        separator: __
       - label: "Address"
         name: "address"
         widget: "object"
