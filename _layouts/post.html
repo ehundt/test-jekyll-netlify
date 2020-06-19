@@ -11,8 +11,13 @@ layout: default
 {% endif %}
 
 {% if page.location %}
-<div>Geokoordinaten: {{ page.location.latitude }} - {{ page.location.longitude }}</a></div>
+<div>Location: {{ page.location }}</div>
 {% endif %}
 
+{% if page.geolocation %}
+<div>Geokoordinaten: {{ page.geolocation.latitude }} - {{ page.geolocation.longitude }}</div>
+{% endif %}
+
+{% google_map %}
 
 <div class="content">{{ content }}</div>
