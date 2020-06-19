@@ -36,7 +36,7 @@ console.log({{ page.location }});
 {% endcapture %}
 
 {% capture latitude %}
-"{{ page.location.coordinates[1] }}"
+"{{ page.location["coordinates"][1] }}"
 {% endcapture %}
 
 latitude {{ latitude }}<br />
