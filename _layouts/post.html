@@ -26,4 +26,17 @@ layout: default
 
 <div class="content">{{ content }}</div>
 
-<script>console.log({{ page.location }})</script>
+<script>
+console.log({{ page.location }});
+</script>
+
+
+{% capture longitude %}
+"{{ page.location.coordinates[0] }}"
+{% endcapture %}
+
+{% capture latitude %}
+"{{ page.location.coordinates[1] }}"
+{% endcapture %}
+
+{% include google-map.html latitude=latitude longitude=longitude zoom=5 %}
