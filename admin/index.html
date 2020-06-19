@@ -16,7 +16,7 @@
           const separator = this.props.field.get('separator', ', ')
           this.props.onChange(e.target.value.split(separator).map((e) => e.trim()));
           console.log(JSON.stringify(this.props.entry));
-          console.log(JSON.stringify(this.props.entry.meta.data));
+          console.log(JSON.stringify(this.props.entry[0].meta));
         },
 
         render: function() {
