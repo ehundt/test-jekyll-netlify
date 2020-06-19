@@ -2,7 +2,7 @@
 layout: post
 title: Monkeys everywhere
 date: 2020-06-19T13:34:10.585Z
-geolocation: '{"type":"Point","coordinates":[9.5271117,54.1658155]}'
+geolocation: '{"type":"Point","coordinates":[9.9888361,53.5459814]}'
 author: Ted
 categories:
   - animal
