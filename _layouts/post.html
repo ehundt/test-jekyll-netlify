@@ -6,6 +6,10 @@ layout: default
   <div>Author: <a href="{{ author.url }}">{{ author.display_name }}</a></div>
 {% endif %}
 
+{% if page.category %}
+<div>Category: page.category</div>
+{% endif %}
+
 {% if page.address %}
 <div>Adresse: {{ page.address.street }}, {{ page.address.post-code }} {{ page.address.city }}</a></div>
 {% endif %}
