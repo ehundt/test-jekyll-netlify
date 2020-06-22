@@ -18,33 +18,11 @@ layout: default
 <div>Location: {{ page.location }}</div>
 {% endif %}
 
-{% if page.latitude %}
-<div>Geokoordinaten: {{ page.latitude }} - {{ page.longitude }}</div>
-{% endif %}
+GEOLOCATION by map widget: {{ page.geolocation }}<br />
+<br />
 
 {% google_map %}
 
 <div class="content">{{ content }}</div>
 
-<script>
-console.log({{ page.geolocation }});
-</script>
-
-GEOLOCATION: {{ page.geolocation }}<br />
-GEOLOCATION: {{ page.geolocation.coordinates }}<br />
-GEOLOCATION: {{ page.geolocation[coordinates] }}<br />
-GEOLOCATION: {{ page.geolocation["coordinates"] }}<br />
-GEOLOCATION: {{ page.glocation }}<br />
-
-{% capture longitude %}
-"{{ page.geolocation.coordinates[0] }}"
-{% endcapture %}
-
-{% capture latitude %}
-"{{ page.geolocation["coordinates"][1] }}"
-{% endcapture %}
-
-latitude {{ latitude }}<br />
-longitude {{ longitude }}<br />
-
-{% include google-map.html latitude=latitude longitude=longitude zoom=5 %}
+{% include google-map.html geolocation=page.geolocation zoom=5 %}

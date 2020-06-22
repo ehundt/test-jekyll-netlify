@@ -1,6 +1,10 @@
 <div id="map" style="width:300px;height:300px;"></div>
 <script>
-  window.mapData = {"latitude": {{ include.latitude }},"longitude": {{ include.longitude }}, "zoom": {{ include.zoom}}};
+  var geoObject = JSON.parse('{{ include.geolocation }}');
+  var latitude = geoObject.coordinates[0];
+  var longitude = geoObject.coordinates[1];
+
+  window.mapData = {"latitude": latitude, "longitude": longitude, "zoom": {{ include.zoom}}};
 
   function initMap() {
     var myOptions = {
