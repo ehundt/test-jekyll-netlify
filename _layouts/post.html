@@ -30,6 +30,11 @@ layout: default
 console.log({{ page.geolocation }});
 </script>
 
+GEOLOCATION: {{ page.geolocation }}<br />
+GEOLOCATION: {{ page.geolocation.coordinates }}<br />
+GEOLOCATION: {{ page.geolocation[coordinates] }}<br />
+GEOLOCATION: {{ page.geolocation["coordinates"] }}<br />
+GEOLOCATION: {{ page.glocation }}<br />
 
 {% capture longitude %}
 "{{ page.geolocation.coordinates[0] }}"
