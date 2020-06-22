@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://unpkg.com/netlify-cms-widget-gmaps@^1.0.0"></script>
+
+    <script>
+      CMS.registerWidget('gmaps', netlifyCmsGMapsControl, netlifyCmsGMapsPreview)
+    </script>
   </head>
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
