@@ -37,13 +37,6 @@ collections:
           - {label: "Street Address", name: "street", widget: "string"}
           - {label: "City", name: "city", widget: "string"}
           - {label: "Postal Code", name: "post-code", widget: "string"}
-      - label: "Geokoordinaten"
-        name: "location"
-        widget: "object"
-        collapsed: false
-        fields:
-          - { label: 'Latitude', name: 'latitude', widget: 'number', valueType: "float" }
-          - { label: 'Longitude', name: 'longitude', widget: 'number', valueType: "float" }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'authors'
     label: 'Authors'

@@ -14,14 +14,8 @@ layout: default
 <div>Adresse: {{ page.address.street }}, {{ page.address.post-code }} {{ page.address.city }}</a></div>
 {% endif %}
 
-{% if page.location %}
-<div>Location: {{ page.location }}</div>
-{% endif %}
-
 GEOLOCATION by map widget: {{ page.geolocation }}<br />
 <br />
-
-{% google_map %}
 
 <div class="content">{{ content }}</div>
 
